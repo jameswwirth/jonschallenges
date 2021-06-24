@@ -37,8 +37,14 @@
       <li>3km</li>
       <form id="activity-form">
         <div class="form-group">
-          <label for="challenge">Challenge</label>
-          <input id="challenge" type="text" class="form-control" />
+          <label for="challenge" class="form-label mt-4"
+            >Select Challenge</label
+          >
+          <select class="form-select" id="challenge">
+            <option>1km Run</option>
+            <option>2km Run</option>
+            <option>3km Run</option>
+          </select>
         </div>
         <div class="form-group">
           <label for="competitor">Competitor</label>
@@ -57,6 +63,7 @@
       <table class="table table-hover mt-3">
         <thead>
           <tr>
+            <th scope="col">ID</th>
             <th scope="col">Challenge</th>
             <th scope="col">Competitor</th>
             <th scope="col">Time</th>
